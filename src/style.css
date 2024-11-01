@@ -3,16 +3,77 @@ body {
 }
 
 .card-spanish {
-  width: 100%; /* Ancho completo de la columna */
-  height: auto; /* Deja que la altura se ajuste automáticamente */
+  width: 100%; /* La carta ocupa el ancho completo de su contenedor */
   aspect-ratio: 3 / 5; /* Mantener proporciones de la carta */
   background-color: white;
   border-radius: 15px; /* Bordes redondeados */
   border: 2px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para darle un poco de relieve */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative; /* Para posicionar los elementos internos */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
+  padding: 5%; /* Espaciado interno */
+}
+
+.card-number {
+  font-size: 36px; /* Tamaño fijo en pantallas pequeñas */
+  color: black;
+  text-align: center;
+}
+
+.card-suit {
+  font-size: 24px; /* Tamaño fijo en pantallas pequeñas */
+  color: red;
+  position: absolute;
+}
+
+.top-suit {
+  top: 5%;
+  left: 5%;
+}
+
+.bottom-suit {
+  bottom: 5%;
+  right: 5%;
+  transform: rotate(180deg); /* Invertir el símbolo inferior */
+}
+
+/* Para pantallas medianas (md) y más grandes, aumenta el tamaño de los elementos */
+@media (min-width: 768px) {
+  .card-number {
+    font-size: 48px; /* Tamaño más grande para pantallas medianas */
+  }
+  
+  .card-suit {
+    font-size: 32px; /* Tamaño más grande para pantallas medianas */
+  }
+}
+
+/* Para pantallas grandes (lg) y extra grandes, aumenta aún más el tamaño */
+@media (min-width: 992px) {
+  .card-number {
+    font-size: 60px; /* Tamaño más grande para pantallas grandes */
+  }
+  
+  .card-suit {
+    font-size: 40px; /* Tamaño más grande para pantallas grandes */
+  }
+}
+
+.heart {
+  color: red;
+}
+
+.diamond {
+  color: red;
+}
+
+.spade {
+  color: black;
+}
+
+.club {
+  color: black;
 }
