@@ -1,30 +1,30 @@
 body {
-  background-color: green; /* Color de fondo del body */
+  background-color: green;
 }
 
 .card-spanish {
-  width: 100%; /* La carta ocupa el ancho completo de su contenedor */
-  aspect-ratio: 3 / 5; /* Mantener proporciones de la carta */
+  width: 100%;
+  aspect-ratio: 3 / 5;
   background-color: white;
-  border-radius: 15px; /* Bordes redondeados */
+  border-radius: 15px; 
   border: 2px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  position: relative; /* Para posicionar los elementos internos */
+  position: relative; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5%; /* Espaciado interno */
+  padding: 5%; 
 }
 
 .card-number {
-  font-size: 36px; /* Tamaño fijo en pantallas pequeñas */
+  font-size: 36px; 
   color: black;
   text-align: center;
 }
 
 .card-suit {
-  font-size: 24px; /* Tamaño fijo en pantallas pequeñas */
+  font-size: 24px;
   color: red;
   position: absolute;
 }
@@ -37,28 +37,26 @@ body {
 .bottom-suit {
   bottom: 5%;
   right: 5%;
-  transform: rotate(180deg); /* Invertir el símbolo inferior */
+  transform: rotate(180deg);
 }
 
-/* Para pantallas medianas (md) y más grandes, aumenta el tamaño de los elementos */
 @media (min-width: 768px) {
   .card-number {
-    font-size: 48px; /* Tamaño más grande para pantallas medianas */
+    font-size: 48px; 
   }
   
   .card-suit {
-    font-size: 32px; /* Tamaño más grande para pantallas medianas */
+    font-size: 32px; 
   }
 }
 
-/* Para pantallas grandes (lg) y extra grandes, aumenta aún más el tamaño */
 @media (min-width: 992px) {
   .card-number {
-    font-size: 60px; /* Tamaño más grande para pantallas grandes */
+    font-size: 60px;
   }
   
   .card-suit {
-    font-size: 40px; /* Tamaño más grande para pantallas grandes */
+    font-size: 40px;
   }
 }
 
