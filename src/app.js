@@ -16,7 +16,7 @@ function getRandomSuit() {
 }
 
 function generateRandomCard() {
-  const cardElement = document.querySelector(".card-spanish");
+  const cardElement = document.querySelector(".card");
 
   const randomValue = getRandomValue();
   const randomSuit = getRandomSuit();
